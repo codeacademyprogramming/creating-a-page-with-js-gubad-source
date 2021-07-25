@@ -1,0 +1,226 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px; }
+  .tabs button {
+    background-color: cadetblue;
+    padding: 6px;
+    border-radius: 6px;
+    border-style: none; }
+    .tabs button:hover {
+      background-color: white;
+      color: cadetblue;
+      cursor: pointer;
+      border: 2px solid cadetblue; }
+
+.info {
+  margin: 30px 0px 0px 0px; }
+
+nav {
+  position: fixed;
+  z-index: 6;
+  width: 100%;
+  height: 9vh;
+  background-color: #6d49cb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  box-sizing: border-box;
+  padding: 0px 10px 0px 10px; }
+  nav .nav-left {
+    display: flex;
+    justify-content: center; }
+    nav .nav-left .gitlab {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer; }
+      nav .nav-left .gitlab a {
+        padding: 0px 16px 0px 0px; }
+        nav .nav-left .gitlab a i {
+          color: darkgoldenrod;
+          font-size: xx-large; }
+    nav .nav-left .hamburger {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 16px;
+      cursor: pointer;
+      position: relative; }
+      nav .nav-left .hamburger a {
+        padding: 0px 16px 0px 0px; }
+        nav .nav-left .hamburger a i {
+          color: white;
+          font-size: xx-large; }
+      nav .nav-left .hamburger .hamburger-info {
+        position: absolute;
+        top: 52px;
+        left: 10px;
+        background-color: white;
+        z-index: 1;
+        width: 200px;
+        border-radius: 6px;
+        border: 2px solid gray;
+        box-sizing: border-box;
+        padding: 16px; }
+        nav .nav-left .hamburger .hamburger-info li a {
+          text-decoration: none; }
+          nav .nav-left .hamburger .hamburger-info li a i {
+            color: black;
+            font-size: 16px;
+            margin: 6px 16px; }
+  nav .nav-right {
+    display: flex;
+    align-items: center; }
+    nav .nav-right form {
+      position: relative; }
+      nav .nav-right form input {
+        background-color: #7f7fe9;
+        border: none;
+        border-radius: 6px;
+        padding: 6px; }
+        nav .nav-right form input::placeholder {
+          color: white; }
+      nav .nav-right form a {
+        position: absolute;
+        top: 6px;
+        right: 6px; }
+    nav .nav-right .squareplus {
+      position: relative;
+      background-color: #7f7fe9;
+      padding: 6px;
+      border-radius: 6px;
+      margin-left: 6px; }
+      nav .nav-right .squareplus a i {
+        font-size: 23px;
+        margin-right: 10px; }
+      nav .nav-right .squareplus .sign {
+        position: absolute;
+        top: 55px;
+        left: 0px;
+        background-color: white;
+        width: 166px;
+        height: 166px;
+        border-radius: 6px;
+        border: 2px solid gray;
+        cursor: pointer;
+        box-sizing: border-box;
+        padding: 6px 0px 6px 6px;
+        font-size: 16px;
+        line-height: 22px; }
+    nav .nav-right .sign-in {
+      color: black;
+      background-color: white;
+      padding: 6px;
+      border-radius: 6px;
+      margin-left: 6px; }
+
+.sidebar-collapse {
+  position: fixed;
+  top: 9vh;
+  background-color: #dbdbdb;
+  height: 91vh;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .sidebar-collapse .sidebar li {
+    padding: 16px 0px 0px 16px;
+    list-style: none; }
+    .sidebar-collapse .sidebar li a {
+      text-decoration: none;
+      color: black; }
+      .sidebar-collapse .sidebar li a i {
+        padding: 0px 3px 0px 0px; }
+  .sidebar-collapse .collapser {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0px 0px 16px 26px; }
+    .sidebar-collapse .collapser li {
+      margin-left: 6px;
+      list-style: none; }
+      .sidebar-collapse .collapser li a {
+        text-decoration: none; }
+
+body {
+  height: 2000px; }
+
+.container {
+  position: relative;
+  top: 9vh; }
+  .container article {
+    margin-left: 99px;
+    border: 0.6px solid gray;
+    border-radius: 6px; }
+    .container article .article-header {
+      font-weight: bolder;
+      border-bottom: 0.6px;
+      border-color: gray;
+      border-style: solid;
+      background-color: white;
+      padding: 12px; }
+    .container article .article-info {
+      box-sizing: border-box;
+      padding: 26px; }
+  .container table {
+    position: relative;
+    left: 9%;
+    border-collapse: collapse;
+    width: 91%;
+    border: 1px solid #f0f0f0;
+    margin-bottom: 10px; }
+    .container table thead {
+      font-weight: bolder;
+      background-color: #f0f0f0; }
+    .container table td, .container table th {
+      text-align: left;
+      padding: 16px 9px 16px;
+      border-bottom: 0.6px solid #f0f0f0; }
