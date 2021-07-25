@@ -91,6 +91,7 @@ nav {
       padding: 6px;
       border-radius: 6px;
       margin-left: 6px;
+      cursor: pointer;
       a {
         i {
           font-size: 23px;
@@ -136,14 +137,23 @@ nav {
     li {
         padding: 16px 0px 0px 16px;
         list-style: none;
+        
         a {
           text-decoration: none;
           color: black;
+          &.active{
+            color: black;
+            background-color: grey;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: bolder;
+          }
           i{
               padding: 0px 3px 0px 0px;
           }
         }
       }
+     
   }
  .collapser{
     display: flex;
@@ -159,12 +169,6 @@ nav {
  }
 }
 
-
-
-
-body{
-  height: 2000px;
-}
 .container{
   position: relative;
   top: 9vh;

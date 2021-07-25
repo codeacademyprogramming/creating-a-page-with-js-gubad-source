@@ -14,16 +14,15 @@ tabButton.forEach((elem) => {
     elemSelected.classList.add("active");
   });
 });
-//////////////////////////////////////////////////////////////////////////////////
-let squarePlus = document.querySelectorAll(".squareplus a");
-squarePlus.forEach((elem) => {
-  elem.addEventListener("click", function () {
-    let sign = document.querySelector(".sign");
-    sign.classList.toggle("d-none");
-  });
-});
 
-let hamburger = document.querySelector(".hamburger a");
+
+let squarePlus = document.querySelector(".squareplus");
+squarePlus.addEventListener('click',function(){
+  let sign = document.querySelector(".sign");
+  sign.classList.toggle("d-none");
+})
+
+let hamburger = document.querySelector(".hamburger");
 hamburger.addEventListener("click", function () {
   let hamburgerInfo = document.querySelector(".hamburger-info");
   hamburgerInfo.classList.toggle("d-none");
@@ -42,3 +41,13 @@ sidebar.forEach((elem) => {
       })
   }
 });
+
+
+let activateSide=document.querySelectorAll('.sidebar li a');
+activateSide.forEach((elem)=>{
+  elem.addEventListener('click',function(){
+  let activeSide=document.querySelector('.sidebar li a.active')
+  activeSide.classList.remove('active');
+  elem.classList.add('active');
+  })
+})
