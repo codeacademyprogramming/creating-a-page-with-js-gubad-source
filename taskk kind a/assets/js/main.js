@@ -102,18 +102,19 @@ tabButton.forEach((elem) => {
       `[data-target='${elem.getAttribute("data-source")}']`
     );
 
-    let elemPrime = document.querySelector(".active");
-    elemPrime.classList.remove("active");
+    let elemPrime = document.querySelector(".activee");
+    elemPrime.classList.remove("activee");
     elemPrime.classList.add("d-none");
 
     elemSelected.classList.remove("d-none");
-    elemSelected.classList.add("active");
+    elemSelected.classList.add("activee");
   });
 });
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////
 let next=document.querySelector('.slider .next');
+
 next.addEventListener('click',function(e){
   e.stopPropagation();
   let elemPrimary=document.querySelector('.slider .items .item.active');
@@ -124,6 +125,7 @@ next.addEventListener('click',function(e){
     document.querySelector('.slider .items .item:first-child').classList.add('active');
   }
 });
+
 let prev=document.querySelector('.slider .prev');
 prev.addEventListener('click',function(e){
   e.stopPropagation();
