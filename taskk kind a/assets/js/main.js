@@ -16,12 +16,12 @@ form.addEventListener("submit", function (e) {
   let spanTime = document.createElement("span");
   spanTime.classList.add("time");
   let date = new Date();
-  let month = date.getMonth();
 
+  let year = date.getFullYear();
   let hours = date.getHours();
   let minutes = date.getMinutes();
   let seconds = date.getSeconds();
-  let timeSpan = `${month} month :${hours}:${minutes}:${seconds}`;
+  let timeSpan = `${year} year :${hours}:${minutes}:${seconds}`;
   console.log(timeSpan);
   spanTime.append(timeSpan);
 
@@ -89,3 +89,52 @@ form.addEventListener("submit", function (e) {
     });
   });
 });
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let tabButton = Array.from(document.querySelectorAll(".tabs button"));
+
+tabButton.forEach((elem) => {
+  elem.addEventListener("click", function (e) {
+    e.stopPropagation();
+    let elemSelected = document.querySelector(
+      `[data-target='${elem.getAttribute("data-source")}']`
+    );
+
+    let elemPrime = document.querySelector(".active");
+    elemPrime.classList.remove("active");
+    elemPrime.classList.add("d-none");
+
+    elemSelected.classList.remove("d-none");
+    elemSelected.classList.add("active");
+  });
+});
+
+
+///////////////////////////////////////////////////////////////////////////////////////////
+let next=document.querySelector('.slider .next');
+next.addEventListener('click',function(e){
+  e.stopPropagation();
+  let elemPrimary=document.querySelector('.slider .items .item.active');
+  elemPrimary.classList.remove('active');
+  if(elemPrimary.nextElementSibling !=null){
+   elemPrimary.nextElementSibling.classList.add('active');
+  }else{
+    document.querySelector('.slider .items .item:first-child').classList.add('active');
+  }
+});
+let prev=document.querySelector('.slider .prev');
+prev.addEventListener('click',function(e){
+  e.stopPropagation();
+  let elemPrimary=document.querySelector('.slider .items .item.active');
+  elemPrimary.classList.remove('active');
+
+  if(elemPrimary.previousElementSibling !=null){
+    elemPrimary.previousElementSibling.classList.add('active');
+  }else{
+    document.querySelector('.slider .items .item:last-child').classList.add('active');
+  }
+});
+
+

@@ -4,6 +4,56 @@
   border-radius: 6%;
   cursor: pointer; }
 
+.slider {
+  position: relative; }
+
+.slider .items {
+  margin-top: 10px;
+  position: relative;
+  height: 900px; }
+
+.slider .items .item {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+  transition: 0.5s all; }
+
+.slider .items .item.active {
+  z-index: 1;
+  opacity: 1; }
+
+.slider .next, .slider .prev {
+  z-index: 2;
+  position: absolute;
+  top: 30%;
+  right: 22%;
+  cursor: pointer; }
+
+.slider .prev {
+  right: initial;
+  right: 96%; }
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px; }
+  .tabs button {
+    background-color: cadetblue;
+    padding: 6px;
+    border-radius: 6px;
+    border-style: none; }
+    .tabs button:hover {
+      background-color: white;
+      color: cadetblue;
+      cursor: pointer;
+      border: 2px solid cadetblue; }
+
+.info {
+  margin: 30px 0px 0px 0px; }
+
 #form .container .row {
   display: flex;
   justify-content: center; }
