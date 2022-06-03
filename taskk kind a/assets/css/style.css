@@ -1,0 +1,83 @@
+#form .container .row ul li .icon1, #form .container .row ul li .icon2 {
+  margin-left: 6px;
+  padding: 3px;
+  border-radius: 6%;
+  cursor: pointer; }
+
+.slider {
+  position: relative; }
+
+.slider .items {
+  margin-top: 10px;
+  position: relative;
+  height: 900px; }
+
+.slider .items .item {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0;
+  transition: 0.5s all; }
+
+.slider .items .item.active {
+  z-index: 1;
+  opacity: 1; }
+
+.slider .next, .slider .prev {
+  z-index: 2;
+  position: absolute;
+  top: 30%;
+  right: 22%;
+  cursor: pointer; }
+
+.slider .prev {
+  right: initial;
+  right: 96%; }
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px; }
+  .tabs button {
+    background-color: cadetblue;
+    padding: 6px;
+    border-radius: 6px;
+    border-style: none; }
+    .tabs button:hover {
+      background-color: white;
+      color: cadetblue;
+      cursor: pointer;
+      border: 2px solid cadetblue; }
+
+.info {
+  margin: 30px 0px 0px 0px; }
+
+#form .container .row {
+  display: flex;
+  justify-content: center; }
+  #form .container .row input {
+    width: 100%;
+    height: 46px;
+    margin: 9px 0px 9px 0px; }
+  #form .container .row button {
+    margin: 0px 0px 16px 0px; }
+  #form .container .row ul li {
+    text-align: left;
+    display: flex;
+    justify-content: space-between; }
+    #form .container .row ul li i {
+      cursor: pointer;
+      position: relative;
+      top: 6px; }
+    #form .container .row ul li .time {
+      color: blue;
+      background-color: yellow;
+      padding: 3px;
+      border-radius: 6%;
+      margin-left: 66px; }
+    #form .container .row ul li .icon1 {
+      background-color: #75eb75; }
+    #form .container .row ul li .icon2 {
+      background-color: violet; }

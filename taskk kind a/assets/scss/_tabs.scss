@@ -1,0 +1,20 @@
+.tabs{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    button{
+        background-color: cadetblue;
+        padding: 6px;
+        border-radius: 6px;
+        border-style: none;
+        &:hover{
+            background-color: white;
+            color: cadetblue;
+            cursor: pointer;
+            border: 2px solid cadetblue;
+        }
+    }
+}
+.info{
+    margin: 30px 0px 0px 0px;
+}

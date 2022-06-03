@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <div class="gitlab">
+          <a href="#"><i class="fab fa-gitlab"></i></a>
+          <h1 class="text-light">GitLab</h1>
+        </div>
+        <div class="hamburger">
+          <a href="#"><i class="fas fa-bars"></i></a>
+          <h1 class="text-light">Menu</h1>
+          <ul class="hamburger-info d-none">
+            <li>
+              <a href="#"><i class="fas fa-book"></i>Projects</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-users"></i>Groups</a>
+            </li>
+            <li>
+              <a href="#"><i class="fas fa-cut"></i>Snippets</a>
+            </li>
+            <hr />
+            <li>
+              <a href="#"><i class="fas fa-question-circle"></i>Help</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="nav-right">
+        <form action="post">
+          <input type="text" placeholder="Search Gitlab..." />
+          <a href="#"><i class="fas fa-search text-light"></i></a>
+        </form>
+        <div class="squareplus">
+          <a href="#"><i class="fas fa-plus-square text-light"></i></a>
+          <a href="#"><i class="fas fa-caret-down text-light"></i></a>
+          <ul class="sign d-none">
+            <li>Lorem.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum.</li>
+            <li>Lorem, ipsum dolor.</li>
+            <li>Lorem, ipsum.</li>
+          </ul>
+        </div>
+        <div class="sign-in">
+          <h3>Sign in / Register</h3>
+        </div>
+      </div>
+    </nav>
+
+    <div class="sidebar-collapse">
+      <div class="sidebar">
+        <li>
+          <a href="#" ><i class="far fa-file-powerpoint"></i>Npm-another-project</a
+          >
+        </li>
+        <li>
+          <a href="#" data-source="project" class="active"
+            ><i class="fas fa-file-code"></i>Project information</a
+          >
+        </li>
+        <li>
+          <a href="#" data-source="repository"
+            ><i class="fas fa-file-signature"></i>Repository</a
+          >
+        </li>
+        <li>
+          <a href="#" data-source="issues"
+            ><i class="far fa-object-ungroup"></i>Issues</a
+          >
+        </li>
+        <li>
+          <a href="#" data-source="request"
+            ><i class="fas fa-bars"></i>Merge Requests</a
+          >
+        </li>
+        <li>
+          <a href="#" data-source="requirement"
+            ><i class="fas fa-rocket"></i>Requirements</a
+          >
+        </li>
+        <li>
+          <a href="#" data-source="cicd"><i class="fas fa-rocket"></i>CI/CD</a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-octopus-deploy"></i>Deployments</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-desktop"></i>Monitor</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-box-open"></i>Packages</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-chart-bar"></i>Analytics</a>
+        </li>
+        <li>
+          <a href="#"><i class="fab fa-wikipedia-w"></i>Wiki</a>
+        </li>
+        <li>
+          <a href="#"><i class="fas fa-cut"></i>Snippets</a>
+        </li>
+      </div>
+      <ul class="sidebar-info">
+        <ul data-target="project" class="d-none">
+          <li>test</li>
+          <li>test</li>
+          <li>test</li>
+        </ul>
+        <ul data-target="repository" class="d-none">
+          <li>test</li>
+          <li>test</li>
+          <li>test</li>
+        </ul>
+        <ul data-target="issues" class="d-none">
+          <li>test</li>
+          <li>test</li>
+          <li>test</li>
+        </ul>
+        <ul data-target="request" class="d-none">
+          test
+        </ul>
+        <ul data-target="requirement" class="d-none">
+          test
+        </ul>
+        <ul data-target="cicd" class="d-none">
+          test
+        </ul>
+      </ul>
+      <div class="collapser">
+        <i class="fas fa-chevron-left"></i>
+        <li><a href="#">Collapse Sidebar</a></li>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Last Commit</th>
+                <th>Last Update</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><i class="far fa-folder-open text-secondary"></i> lorem</td>
+                <td>Initialized from 'NodeJS Express' project template</td>
+                <td>5 months ago</td>
+              </tr>
+              <tr>
+                <td> <i class="far fa-folder-open text-secondary"></i> lorem</td>
+                <td>Initialized from 'NodeJS Express' project template</td>
+                <td>5 months ago</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-folder-open text-secondary"></i> lorem</td>
+                <td>Initialized from 'NodeJS Express' project template</td>
+                <td>5 months ago</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-folder-open text-secondary"></i> lorem</td>
+                <td>Initialized from 'NodeJS Express' project template</td>
+                <td>5 months ago</td>
+              </tr>
+              <tr>
+                <td><i class="far fa-folder-open text-secondary"></i> lorem</td>
+                <td>Initialized from 'NodeJS Express' project template</td>
+                <td>5 months ago</td>
+              </tr>
+              <tr>
+                <td><i class="fab fa-git-alt text-danger"></i> lorem</td>
+                <td>Initialized from 'NodeJS Express' project template</td>
+                <td>5 months ago</td>
+              </tr>
+              <tr>
+                <td><i class="fab fa-docker text-primary"></i> lorem</td>
+                <td>Initialized from 'NodeJS Express' project template</td>
+                <td>5 months ago</td>
+              </tr>
+              <tr>
+                <td><i class="fab fa-js text-warning"></i> lorem</td>
+                <td>Initialized from 'NodeJS Express' project template</td>
+                <td>5 months ago</td>
+              </tr>
+              <tr>
+                <td><i class="fab fa-node-js text-success"></i> lorem</td>
+                <td>Initialized from 'NodeJS Express' project template</td>
+                <td>5 months ago</td>
+              </tr>
+              <tr>
+                <td><i class="fab fa-node-js text-success"></i> lorem</td>
+                <td>Initialized from 'NodeJS Express' project template</td>
+                <td>5 months ago</td>
+              </tr>
+            </tbody>
+          </table>
+          <article>
+            <div class="article-header">
+              <h1><i class="fas fa-file-code"></i> README.md</h1>
+            </div>
+            <div class="article-info">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dolorum,
+              voluptate quas iste deserunt obcaecati neque quis ducimus nesciunt est!
+              Excepturi expedita consequuntur earum libero voluptatem obcaecati
+              pariatur in quasi voluptatibus impedit eveniet, neque fugiat sequi.
+              Magnam natus saepe facere officia nesciunt voluptate voluptatibus
+              eveniet soluta dolores id! Quibusdam qui earum veniam ratione voluptatem
+              aliquam excepturi nisi aspernatur nobis! Facere qui quia vero laborum
+              aspernatur vel veritatis ullam, natus itaque nam quam quaerat repellat,
+              nulla ipsam, distinctio quos rerum pariatur magnam nisi in rem odit quis
+              error! Atque cumque, modi nostrum voluptates blanditiis dolores
+              asperiores consequuntur, possimus magnam nobis tenetur rerum sint
+              repudiandae eaque sed voluptatum. Labore voluptate facere sint sit nihil
+              est quos id neque odit! Quidem molestias, voluptates ad aliquam, itaque
+              officiis accusamus fuga iure blanditiis, autem iusto! Perferendis odio
+              sit explicabo quae ratione praesentium? At dolorem aut dolor minima
+              dolore voluptas cum voluptatum impedit. Eaque, explicabo ad corporis
+              reiciendis molestiae eius ullam exercitationem esse quod minima natus
+              animi vero eligendi, blanditiis, assumenda consequatur? Itaque tempore
+              rem eligendi, dolore velit nesciunt officia aliquam voluptatem repellat
+              amet error eum delectus laboriosam magni nostrum sed eveniet
+              repellendus. Ipsum totam mollitia laborum necessitatibus laboriosam
+              perspiciatis quos. Itaque sint repellat, possimus eligendi earum tenetur
+              ea expedita beatae illum soluta molestiae officiis quisquam veniam
+              deleniti aspernatur quo? Obcaecati impedit, voluptate quidem totam natus
+              commodi, perferendis, magnam magni aliquam hic debitis! Temporibus
+              deserunt sapiente autem beatae cum nesciunt ipsam porro unde illum
+              blanditiis. Assumenda recusandae sit eum. Vitae accusantium in provident
+              doloremque quo voluptatum hic maiores. Ipsum illum doloremque
+              exercitationem eos sint perspiciatis quisquam minima consequatur, nihil
+              consectetur incidunt enim velit iure totam omnis eum iusto voluptate
+              ratione voluptatum nulla aliquam sed pariatur! Earum, aspernatur
+              deserunt? Corporis quis at suscipit eveniet, hic eaque sed provident
+              delectus. Explicabo in eveniet nam, ut, nemo tempora culpa maxime
+              praesentium placeat eum deleniti aut, vitae officia cupiditate
+              distinctio. Explicabo cum tempora perferendis quibusdam voluptate,
+              eligendi expedita et officiis corporis nihil. Accusamus, architecto!
+              Velit obcaecati labore porro quae omnis dolor nihil commodi asperiores,
+              tempore dignissimos quidem suscipit doloribus eaque voluptas ea
+              temporibus eveniet laboriosam cum impedit recusandae cumque eius sunt
+              sed. Molestiae in ab dolorum impedit? Dolorum, eius ducimus illo nulla
+              nesciunt explicabo at provident iure molestias repellendus reprehenderit
+              architecto ex tempora numquam! Voluptatum iusto ut dolor illo aperiam
+              sunt similique assumenda ad soluta saepe nesciunt, recusandae enim.
+              Alias at, accusamus eveniet iste pariatur voluptatibus quisquam quos
+              libero amet eum enim dolores quidem est beatae ipsa nemo, error, natus
+              ex ea aliquam maiores nulla. At perspiciatis pariatur et animi molestias
+              fuga earum temporibus inventore delectus vel esse illo sint explicabo,
+              modi neque aspernatur minima deleniti quo. Numquam ad quod illum, in
+              modi explicabo molestiae ex odio rem sapiente enim magni, sint facere
+              doloribus autem? Accusamus tenetur a eaque, ut maxime non unde molestiae
+              ad quaerat dolore cum inventore, amet dolorem similique! Nemo, corrupti
+              harum deserunt minus, odio minima accusamus distinctio, id
+              exercitationem et porro architecto praesentium culpa non modi iusto
+              veritatis repellendus veniam ab molestiae magni laudantium numquam. Ea.
+            </div>
+          </article>
+        </div>
+      </div>
+    </div> 
+   
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+@import './placeholder.scss';
+@import './variables.scss';
+@import './slider.scss';
+@import './tabs.scss';
+
+#form {
+  .container {
+   
+    .row {
+      display: flex;
+      justify-content: center;
+      input {
+        width: 100%;
+        height: 46px;
+        margin: 9px 0px 9px 0px;
+      }
+      button{
+          margin: 0px 0px 16px 0px;
+      }
+      ul {
+        li {
+          text-align: left;
+          display: flex;
+          justify-content: space-between;
+          
+          i{
+            cursor: pointer;
+            position: relative;
+            top: 6px;
+          }
+          .time{
+            color:$time-color;
+            background-color: $time-background-color;
+            padding: 3px;
+            border-radius: 6%;
+            margin-left: 66px;
+          }
+          .icon1{
+            background-color: rgb(117, 235, 117);
+           @extend %tooltip;
+          }
+          .icon2{
+            background-color:violet ;
+            @extend %tooltip;
+          }
+          
+        }
+      }
+    }
+  }
+}
